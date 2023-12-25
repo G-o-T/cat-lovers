@@ -7,6 +7,7 @@ All cards have a 'like' icon (when clicked, the icon changes color) and a 'delet
 In addition there are:
 - a 'filter' button (when clicked, shows only liked cards);
 - a loader that shows the user that the download process is in progress.
+
 The SPA has adaptive design.
 
 ## Technologies:
