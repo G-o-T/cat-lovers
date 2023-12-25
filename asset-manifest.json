@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/cat-lovers/static/css/main.1df40fc0.css",
+    "main.js": "/cat-lovers/static/js/main.53f06dbe.js",
+    "index.html": "/cat-lovers/index.html",
+    "main.1df40fc0.css.map": "/cat-lovers/static/css/main.1df40fc0.css.map",
+    "main.53f06dbe.js.map": "/cat-lovers/static/js/main.53f06dbe.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1df40fc0.css",
+    "static/js/main.53f06dbe.js"
+  ]
+}
