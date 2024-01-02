@@ -1,0 +1,17 @@
+.wrapper {
+    min-height: 79vh;
+}
+
+.cards {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+    @media screen and (max-width: 310px) {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+.attention {
+    margin: 16px auto;
+}

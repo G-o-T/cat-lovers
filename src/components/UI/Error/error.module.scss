@@ -1,0 +1,14 @@
+@import "../../../styles/colors";
+@import "../../../styles/fonts";
+
+.error {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 20px 50px;
+    border-radius: 24px;
+    justify-content: center;
+
+    @include font(600, 1);
+    background-color: $accent-color;
+}

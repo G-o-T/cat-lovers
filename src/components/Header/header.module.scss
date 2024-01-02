@@ -1,0 +1,36 @@
+@import "../../styles/colors";
+@import "../../styles/fonts";
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 32px;
+
+
+    @media screen and (max-width: 768px) {
+        @include font(500, 0.75);
+    }
+
+    @media screen and (max-width: 310px) {
+        @include font(500, 0.6);
+    }
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.link {
+    text-decoration: none;
+    color: $pale-btn-color;
+
+    &:hover {
+        color: $btn-color;
+        background-color: $accent-color;
+    }
+}

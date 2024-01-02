@@ -1,0 +1,10 @@
+$index: calc(1vw + 1vh);
+
+@mixin font($weight, $coefficient) {
+    font-weight: $weight;
+    font-size: calc($index * $coefficient);
+}
+
+@mixin space($size) {
+    letter-spacing: calc($index * $size);
+}

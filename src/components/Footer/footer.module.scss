@@ -1,0 +1,36 @@
+@import "../../styles/colors";
+@import "../../styles/fonts";
+
+
+.wrapper {
+    margin-top: 16px;
+    background-color: $pale-accent-color;
+}
+
+.footer {
+    margin: 0 auto;
+    padding: 20px 0;
+
+    @media screen and (max-width: 768px) {
+        @include font(400, 0.8);
+    }
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+.link {
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+        color: $btn-color;
+        background-color: $accent-color;
+    }
+}
+

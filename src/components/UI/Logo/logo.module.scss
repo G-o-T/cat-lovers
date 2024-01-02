@@ -1,0 +1,50 @@
+@import "../../../styles/colors";
+@import "../../../styles/fonts";
+
+.logo {
+    display: flex;
+    align-items: center;
+    user-select: none;
+    background-color: $pale-accent-color;
+    column-gap: 8px;
+    border-radius: 16px 8px 16px 8px;
+}
+
+.icon {
+    background-color: $accent-color;
+    padding: 8px;
+    border-radius: 16px 0 0 8px;
+}
+
+.accent {
+    background-color: $accent-color;
+    padding: 0 3px 3px 0;
+    border-radius: 0 0 16px 0;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.text{
+    @include space(0.12);
+
+    @media screen and (max-width: 1024px) {
+        @include space(0.09);
+    }
+
+    &:last-child {
+        @include space(0.27);
+
+        @media screen and (max-width: 1024px) {
+            @include space(0.28);
+        }
+
+        @media screen and (max-width: 356px) {
+            @include space(0.2);
+        }
+    }
+}

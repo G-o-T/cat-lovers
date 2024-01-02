@@ -1,0 +1,80 @@
+@import "../../styles/colors";
+@import "../../styles/fonts";
+
+.card {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    border-radius: 24px;
+    overflow: hidden;
+
+    & * {
+        color: $card-text-color;
+      }
+
+}
+
+.img {
+    border-radius: 24px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.coloredIcon {
+    & * {
+        color: $accent-color;
+      }
+}
+
+.closeIcon {
+    display: flex;
+    align-self: self-end;
+    padding: 12px 20px 0 0;
+}
+
+.content {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #00000060;
+    border-radius: 24px;
+
+    &:hover {
+        background-color: transparent;
+    }
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4px;
+
+    @include font(500, 0.75);
+
+    @media screen and (max-width: 1024px) {
+        @include font(500, 1);
+    }
+
+    @media screen and (max-width: 768px) {
+      @include font(500, 1.25);
+    }
+}
+
+.info {
+    padding: 20px;
+    border-radius: 0px 0px 24px 24px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000 100%);
+    gap: 8px;
+}
+
+.desc {
+    cursor: pointer;
+}
+
